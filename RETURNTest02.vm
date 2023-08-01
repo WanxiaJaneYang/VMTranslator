@@ -1,0 +1,28 @@
+push static 1
+call RETURNTest02.fib 1
+pop static 0
+label END
+goto END
+
+function RETURNTest02.fib 0
+push argument 0	//push n
+push constant 2	//push 2
+lt
+if-goto BASE_CASE	//if n<3, go to base case
+goto RECURSION	//otherwise, do recursion
+
+label BASE_CASE
+push argument 0
+return	//if n<2, Fib(n)=n
+
+label RECURSION
+push argument 0
+push constant 1
+sub
+call RETURNTest02.fib 1	//call Fib.fib(n-1)
+push argument 0
+push constant 2
+sub
+call RETURNTest02.fib 1	//call Fib.fib(n-2)
+add
+return	//return Fib.fib(n-1)+Fib.fib(n-2)

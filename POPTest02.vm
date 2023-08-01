@@ -1,0 +1,12 @@
+//this is the pop test vm file
+//segments tested:this, that, pointer
+push constant 3005
+push constant 3050
+push constant 3
+push constant 2
+pop this 0
+pop that 1
+pop pointer 0
+pop pointer 1
+label END
+goto END

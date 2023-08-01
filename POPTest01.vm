@@ -1,0 +1,23 @@
+//this is the pop test vm file
+//segments tested:constant, argument, local, static, temp, 
+push constant 1
+push constant 2
+push constant 3
+push constant 4
+push constant 5
+push constant 6
+push constant 7
+push constant 8
+push constant 9
+push constant 10
+pop argument 0
+pop argument 1
+pop argument 2
+pop local 0
+pop local 1
+pop static 3
+pop static 4
+pop temp 0
+pop temp 1
+label END
+goto END

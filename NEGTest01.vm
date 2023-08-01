@@ -1,0 +1,28 @@
+//this is to test the vm neg function
+
+push constant 2
+neg
+pop temp 0
+
+push local 0
+neg
+pop temp 1
+
+push argument 0
+neg
+pop temp 2
+
+push this 0
+neg
+pop temp 3
+
+push pointer 1
+neg
+pop temp 4
+
+push static 0
+neg
+pop temp 5
+
+label END
+goto END

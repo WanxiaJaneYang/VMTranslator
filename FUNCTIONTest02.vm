@@ -1,0 +1,3 @@
+function FUNCTIONTest02.func 0
+label END
+goto END

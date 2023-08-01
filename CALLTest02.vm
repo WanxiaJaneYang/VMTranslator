@@ -1,0 +1,17 @@
+call CALLTest02.add 0
+label END
+goto END
+
+function CALLTest02.add 2
+push constant 110
+pop static 0
+push constant 2
+call CALLTest02.test 1
+label END2
+goto END2
+
+function CALLTest02.test 2
+push constant 120
+pop static 1
+label END3
+goto END3

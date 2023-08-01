@@ -1,0 +1,3 @@
+function FUNCTIONTest01.mult 3
+label END
+goto END

@@ -1,0 +1,11 @@
+//this is a vm test file to test push function 
+//segments tested: this that pointer
+
+push this 0
+push this 1
+push that 0
+push that 2
+push pointer 0
+push pointer 1
+label END
+goto END

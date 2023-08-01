@@ -1,0 +1,28 @@
+//this is to test the vm not function
+
+push constant 2
+not
+pop temp 0
+
+push local 0
+not
+pop temp 1
+
+push argument 0
+not
+pop temp 2
+
+push this 0
+not
+pop temp 3
+
+push pointer 0
+not
+pop temp 4
+
+push static 0
+not
+pop temp 5
+
+label END
+goto END

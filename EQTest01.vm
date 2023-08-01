@@ -1,0 +1,34 @@
+//this is to test the vm eq function
+
+push constant 2
+push constant 3000
+eq
+pop temp 0
+
+push local 0
+push local 1
+eq
+pop temp 1
+
+push argument 0
+push argument 1
+eq
+pop temp 2
+
+push this 0
+push that 0
+eq
+pop temp 3
+
+push pointer 0
+push this 0
+eq
+pop temp 4
+
+push static 1
+push static 1
+eq
+pop temp 5
+
+label END
+goto END

@@ -1,0 +1,11 @@
+push constant 1
+push constant 2
+push constant 3
+goto ADD
+sub
+pop local 0
+label ADD
+add
+pop local 1
+label END
+goto END

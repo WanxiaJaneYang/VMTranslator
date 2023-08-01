@@ -1,0 +1,9 @@
+
+push constant 3
+push constant 5
+goto BRANCH
+pop local 0
+label BRANCH
+pop local 1
+label END
+goto END

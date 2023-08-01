@@ -1,0 +1,9 @@
+call CALLTest01.mult 3
+label END
+goto END
+
+function CALLTest01.mult 2
+push constant 100
+pop static 0
+label END2
+goto END2

@@ -1,0 +1,14 @@
+push constant 2
+push constant 5
+call RETURNTest01.Add 2
+push constant 100
+pop static 0
+pop static 1
+label END
+goto END
+
+function RETURNTest01.Add 0
+push argument 0
+push argument 1
+add
+return

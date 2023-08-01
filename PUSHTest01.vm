@@ -1,0 +1,17 @@
+//this is a vm test file to test push function 
+//segment tested: constant, argument, static, temp, local
+
+push constant 0
+push constant 32767
+push argument 0
+push argument 1
+push static 0
+push static 1
+push temp 0
+push temp 1
+push temp 2
+push local 0
+push local 1
+push local 2
+label END
+goto END

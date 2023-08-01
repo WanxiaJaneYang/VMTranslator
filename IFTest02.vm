@@ -1,0 +1,22 @@
+
+push constant 3
+push constant 5
+gt
+if-goto CASE_GT
+push constant 12
+push constant 11
+lt
+if-goto CASE_LT
+push constant 55
+pop local 0
+goto END
+label CASE_GT
+push constant 11
+pop local 1
+label END
+goto END
+
+label CASE_LT
+push constant 30
+pop local 2
+goto END
